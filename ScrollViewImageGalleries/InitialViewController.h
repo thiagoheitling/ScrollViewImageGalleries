@@ -11,5 +11,6 @@
 @interface InitialViewController : UIViewController <UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrolledView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

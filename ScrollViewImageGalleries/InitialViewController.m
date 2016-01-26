@@ -12,7 +12,14 @@
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
-    return self.view;
+    return self.imageView;
 }
+
+- (IBAction)zoomImage:(id)sender {
+    
+    
+}
+
+
 
 @end

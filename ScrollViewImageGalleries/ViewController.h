@@ -12,5 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *viewScrolled;
 
+
+
 @end
 
