@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mwm-n2-X8d">
+                                <rect key="frame" x="16" y="40" width="288" height="508"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse-in-Field" translatesAutoresizingMaskIntoConstraints="NO" id="jo4-0l-mrn">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="508"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse-night" translatesAutoresizingMaskIntoConstraints="NO" id="Iyh-Ro-s7E">
+                                        <rect key="frame" x="288" y="0.0" width="288" height="508"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lighthouse-zoomed" translatesAutoresizingMaskIntoConstraints="NO" id="KdN-Qj-Ds2">
+                                        <rect key="frame" x="576" y="0.0" width="288" height="508"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jo4-0l-mrn" secondAttribute="bottom" id="5xJ-ea-ZW1"/>
+                                    <constraint firstItem="Iyh-Ro-s7E" firstAttribute="width" secondItem="jo4-0l-mrn" secondAttribute="width" id="AFP-Q7-EOe"/>
+                                    <constraint firstItem="KdN-Qj-Ds2" firstAttribute="leading" secondItem="Iyh-Ro-s7E" secondAttribute="trailing" id="AhQ-Mh-XDS"/>
+                                    <constraint firstItem="KdN-Qj-Ds2" firstAttribute="height" secondItem="jo4-0l-mrn" secondAttribute="height" id="Cwd-0u-kiD"/>
+                                    <constraint firstItem="jo4-0l-mrn" firstAttribute="height" secondItem="Mwm-n2-X8d" secondAttribute="height" id="HUp-Wl-EkG"/>
+                                    <constraint firstItem="Iyh-Ro-s7E" firstAttribute="leading" secondItem="jo4-0l-mrn" secondAttribute="trailing" id="MeS-uw-Jgw"/>
+                                    <constraint firstItem="Iyh-Ro-s7E" firstAttribute="height" secondItem="jo4-0l-mrn" secondAttribute="height" id="VRd-XF-wiA"/>
+                                    <constraint firstItem="KdN-Qj-Ds2" firstAttribute="top" secondItem="Mwm-n2-X8d" secondAttribute="top" id="dJj-8Y-3es"/>
+                                    <constraint firstItem="jo4-0l-mrn" firstAttribute="top" secondItem="Mwm-n2-X8d" secondAttribute="top" id="gRC-pH-qxC"/>
+                                    <constraint firstItem="Iyh-Ro-s7E" firstAttribute="top" secondItem="Mwm-n2-X8d" secondAttribute="top" id="jOq-XH-Oho"/>
+                                    <constraint firstAttribute="trailing" secondItem="KdN-Qj-Ds2" secondAttribute="trailing" id="kjw-vV-ahA"/>
+                                    <constraint firstItem="jo4-0l-mrn" firstAttribute="leading" secondItem="Mwm-n2-X8d" secondAttribute="leading" id="sz5-Pf-Oa8"/>
+                                    <constraint firstItem="KdN-Qj-Ds2" firstAttribute="width" secondItem="jo4-0l-mrn" secondAttribute="width" id="t30-0Q-3g6"/>
+                                    <constraint firstItem="jo4-0l-mrn" firstAttribute="width" secondItem="Mwm-n2-X8d" secondAttribute="width" id="v6R-G2-2TM"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wMk-7Y-bJy"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mwm-n2-X8d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Aaz-LH-b2E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mwm-n2-X8d" secondAttribute="trailing" id="YdQ-ta-KCB"/>
+                            <constraint firstItem="Mwm-n2-X8d" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Yih-pX-RiZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mwm-n2-X8d" secondAttribute="bottom" constant="20" id="xAf-yB-aLo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewScrolled" destination="Mwm-n2-X8d" id="yzn-Ai-ayt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="338"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Lighthouse-in-Field" width="960" height="540"/>
+        <image name="Lighthouse-night" width="800" height="600"/>
+        <image name="Lighthouse-zoomed" width="450" height="900"/>
+    </resources>
+</document>
