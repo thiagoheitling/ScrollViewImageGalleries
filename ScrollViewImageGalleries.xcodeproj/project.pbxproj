@@ -13,6 +13,7 @@
 		D0879D471C56E37500EE82A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0879D451C56E37500EE82A0 /* Main.storyboard */; };
 		D0879D4C1C56E37500EE82A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0879D4A1C56E37500EE82A0 /* LaunchScreen.storyboard */; };
 		D0879D541C56E5C900EE82A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0879D531C56E5C900EE82A0 /* Images.xcassets */; };
+		D0879D571C56FDBC00EE82A0 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0879D561C56FDBC00EE82A0 /* InitialViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		D0879D4B1C56E37500EE82A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0879D4D1C56E37500EE82A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0879D531C56E5C900EE82A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0879D551C56FDBC00EE82A0 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		D0879D561C56FDBC00EE82A0 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				D0879D3F1C56E37500EE82A0 /* AppDelegate.h */,
 				D0879D401C56E37500EE82A0 /* AppDelegate.m */,
+				D0879D551C56FDBC00EE82A0 /* InitialViewController.h */,
+				D0879D561C56FDBC00EE82A0 /* InitialViewController.m */,
 				D0879D421C56E37500EE82A0 /* ViewController.h */,
 				D0879D431C56E37500EE82A0 /* ViewController.m */,
 				D0879D451C56E37500EE82A0 /* Main.storyboard */,
@@ -152,6 +157,7 @@
 				D0879D441C56E37500EE82A0 /* ViewController.m in Sources */,
 				D0879D411C56E37500EE82A0 /* AppDelegate.m in Sources */,
 				D0879D3E1C56E37500EE82A0 /* main.m in Sources */,
+				D0879D571C56FDBC00EE82A0 /* InitialViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 				D0879D521C56E37500EE82A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
